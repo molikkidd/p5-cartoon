@@ -3,7 +3,7 @@ function setup() {
     // Create the canvas
     createCanvas(720, 720);
   //   choose background color
-    colorPicker = createColorPicker('#FFC107');
+    colorPicker = createColorPicker('#2196F3');
     treeTop = createColorPicker("#228B22");
     trunk = createColorPicker("#835613");
     sun = createColorPicker("#F8D60A");
@@ -14,7 +14,7 @@ function setup() {
   }
 
   function draw() {
-    background(ring.color());
+    background(colorPicker.color());
     // SKY
     fill(sky.color())
     rect(0,0,720,300)
@@ -33,4 +33,18 @@ function setup() {
     ellipse(100,100,140,140)
     fill(colorPicker.color())
     ellipse(100,100,80,80)
+    // GRASS
+    fill(treeTop.color())
+    rect(0,700,720,20);
+    // FLOWER
+    stroke(5)
+    line(0,300,720,300)
+
+    translate(500,600);
+    noStroke();
+    for (let i = 0; i < 10; i++) {
+        ellipse(0,20,10,40);
+        rotate(PI/5);
+        
+    }
   }
