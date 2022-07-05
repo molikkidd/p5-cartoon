@@ -68,6 +68,8 @@ class Module {
     }
   }
   
+
+
   function draw() {
     background(colorPicker.color());
   // //   face
@@ -75,6 +77,7 @@ class Module {
   //   ellipse(290, 240, 400, 550)
     
   //  ABOVE THE LINE
+//   right space
     fill(sky.color());
     rect(0,0,720, 250)
     
@@ -146,7 +149,7 @@ class Module {
     star(120, 600, 30, 70, 5);
     }
   
-  
+//   STARR
   function star(x, y, radius1, radius2, npoints) {
     let angle = TWO_PI / npoints;
     let halfAngle = angle / 2.0;
