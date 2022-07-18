@@ -16,6 +16,7 @@ function draw() {
   fill("yellow");
   ellipse(100,100,100,100);
   
+  // clouds
   fill("white");
   noStroke()
   ellipse(50,200,100,50)
