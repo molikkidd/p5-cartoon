@@ -33,6 +33,14 @@ function draw() {
   fill("lightgreen")
   noStroke()
   rect(200,0,200,400);
+// message
+  let s = 'Save what is above...';
+  fill('white');
+  text(s, 10, 10, 70, 80);
+  
+  let v = '... and below';
+  fill('green');
+  text(v, 210, 10, 70, 80);
   
 //     treetop
   
