@@ -4,11 +4,13 @@ function setup() {
   
   function draw() {
     background("lavender");
-  //   behind the stripes
-    fill("#3F51B5")
+    
+  //   beh#2196F3 stripes
+    fill("#FFEB3B")
     arc(width,0, 400,400,HALF_PI,PI)
     
-    for (let i = 0; i < 400; i+=20) {
+  //   stripes
+    for (let i = 5; i < 500; i+=20) {
       stroke('#D0BEEF');
       strokeWeight(10);
       line(0,i,width,i);
