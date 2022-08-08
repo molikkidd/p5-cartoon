@@ -7,10 +7,10 @@ function setup() {
     // background("white");
     
   //   stripes
-    for (let i = 5; i < 600; i+=20) {
+    for (let i = 5; i < 300; i+=20) {
       stroke('#E493F2');
       strokeWeight(10);
-      line(i-300,0,i-300,height);
+      line(i,0,i,height);
     }
      
   // arc
@@ -41,22 +41,18 @@ function setup() {
   // left fist for mic
       fill("pink");
       noStroke();
-      // rect(35,90,20,40,5)
       quad(45,101,60,100,65,131,50,134)
 
       fill("pink");
       noStroke();
-      // rect(65,85,20,55,5)
       quad(65,95,95,85,100,155,79,155)
 
       fill("pink");
       noStroke();
-      // rect(95,85,20,60,5)
       quad(100,85,120,85,125,140,105,140)
 
       fill("pink");
       noStroke();
-      // rect(120,95,15,25,5)
       quad(126,95,140,95,140,130,125,130)
 
     // thumb
