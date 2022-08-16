@@ -44,6 +44,16 @@ function draw() {
   //   hairline
   fill("black");
   arc(200,170,180,180,180,0)
+//   eyebrows
+  noFill()
+  stroke("#7A491F")
+  strokeWeight(3)
+  arc(165,200,30,20,190,345,OPEN)
+  
+    noFill()
+  stroke("#7A491F")
+  strokeWeight(3)
+  arc(235,200,30,20,190,345,OPEN)
   
 //   eyes
   fill("white");
