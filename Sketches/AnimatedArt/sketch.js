@@ -1,48 +1,84 @@
-var sideLength;
-var increment;
+var afroSize, straightHair;
+var afroX,afroY;
+var straightX, straightY,straightW, straightH;
 var incr;
-var x,y;
-var skintone = [
-  "#8d5524",
-	"#c68642" ,	
-	"#e0ac69", 	
-	"#f1c27d", 	
-	"#ffdbac",
-];
-var next;
 function setup() {
   createCanvas(400, 400);
-  fill("brown");
+  angleMode(DEGREES)
   
-  sideLength = 100;
-  increment = 0;
-  incr = 50;
-  x = 20;
-  y = 20;
-  next = 0;
-  
+  afroX = 200;
+  afroY = 120;
+  afroSize = 300;
+  straightHair = 0;
+  straightX = 165;
+  straightY = 150;
+  straightW = 70;
+  straightH = 170;
 }
 
+
 function draw() {
+  background("#03A9F4");
   
-//   square to circle
-  if(increment <= sideLength/2) {
-    clear();
-    increment++;
-  } 
-rect(10, 10, sideLength, sideLength, increment);  
+  //   neck
+  fill("#c68642")
+  noStroke();
+  rect(170,290,60,60,15)
+  
+ 
+  
+ //   face
+  fill( "#8d5524")
+  noStroke();
+  ellipse(200,200,140,190);
+  
+  if (afroSize) {
+    //   afro
+  fill(0);
+  // circle(afroX,afroY,afroSize)
+  arc(afroX,afroY,200,200,135,45,CHORD)
+    
+  }
+  
+   //   straight hair
+  fill("black");
+  noStroke();
+  rect(straightX,straightY,straightW, straightH,10)
+
+  
+ //   shoulders
+  fill("purple");
+  noStroke();
+  rect(70,360,260,40)
+  arc(200,360,250,80,180,0)
 
 }
 
 function mousePressed() {
+     
+    if (afroSize <= 300 && afroSize >=0 ) {
+//       change afro size
+      afroSize-=20
+      afroY+=10
       
-    if(increment <= 51) {
-      clear()
-      x+=10
-      // y+=10
-      incr-=3;
-      fill(skintone[next++])
-  }
-  console.log(x,y,increment)
-  rect(x, y, sideLength, sideLength, incr);  
+      fill("green");
+      noStroke()
+      // circle(afroX,afroY,afroSize) 
+        arc(afroX,120,200,200,135,45,CHORD)
+
+//  change straight hair size       
+      straightX-=5
+      straightY+=5
+      straightW+=10
+      fill("black");
+      noStroke();
+      rect(straightX,straightY,straightW, straightH,10)
+      
+      
+    }
+  
+  console.log(straightX,straightY)
+  
+    
+  
 }
