@@ -20,12 +20,15 @@ function setup() {
 function draw() {
   background("#03A9F4");
   
-  //   neck
+
+     //   straight hair
+  fill("black");
+  noStroke();
+  rect(straightX,straightY,straightW, straightH,5)
+   //   neck
   fill("#c68642")
   noStroke();
-  rect(170,290,60,60,15)
-  
- 
+  rect(165,270,70,140,15)
   
  //   face
   fill( "#8d5524")
@@ -40,12 +43,6 @@ function draw() {
     
   }
   
-   //   straight hair
-  fill("black");
-  noStroke();
-  rect(straightX,straightY,straightW, straightH,10)
-
-  
  //   shoulders
   fill("purple");
   noStroke();
@@ -59,25 +56,28 @@ function mousePressed() {
     if (afroSize <= 300 && afroSize >=0 ) {
 //       change afro size
       afroSize-=20
-      afroY+=10
+      afroY+=3
       
       fill("green");
       noStroke()
       // circle(afroX,afroY,afroSize) 
-        arc(afroX,120,200,200,135,45,CHORD)
+        arc(afroX,afroY,200,200,135,45,CHORD)
 
-//  change straight hair size       
-      straightX-=5
-      straightY+=5
+//  change straight hair size  
+      if (straightW <= 190) {
+                straightX-=5
+      straightY+=1
       straightW+=10
       fill("black");
       noStroke();
-      rect(straightX,straightY,straightW, straightH,10)
+      rect(straightX,straightY,straightW, straightH)
+          }
+
       
       
     }
   
-  console.log(straightX,straightY)
+  console.log(straightW)
   
     
   
