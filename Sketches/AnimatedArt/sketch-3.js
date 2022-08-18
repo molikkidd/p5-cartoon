@@ -8,7 +8,7 @@ function setup() {
   
   afroX = 200;
   afroY = 120;
-  afroSize = 300;
+  afroSize = 400;
   straightHair = 0;
   straightX = 165;
   straightY = 150;
