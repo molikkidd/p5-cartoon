@@ -18,17 +18,13 @@ function setup() {
   afroEnd = 45;
 }
 
-
 function draw() {
   background("#FFC107");
-  
-
      //   straight hair
   fill("black");
   noStroke();
   rect(straightX,straightY,straightW, straightH,5)
 
-  
  if (afroSize) {
     //   afro
   fill(0);
