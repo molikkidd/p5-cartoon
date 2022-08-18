@@ -80,7 +80,7 @@ curls = curls + random(-.1,.2);
   
   //   hairline
   fill("black");
-  arc(200,170,180,180,180,0)
+  arc(200,150,120,100,180,0)
   
   for (let lineX = 0; lineX < 145; lineX+=10) {
     stroke('#FFEB3B');
