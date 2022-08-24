@@ -3,6 +3,7 @@ var afroSize, straightHair;
 let x = 0;
 let y = 0;
 let dim = 40.0;
+let img,newImg;
 
 // wave 
 let xspacing = 16; // Distance between each horizontal location
@@ -19,15 +20,19 @@ function setup() {
   w = width + 16;
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
+  img = loadImage('assests/dolphinOne.jpg');
   
 }
 
+// function preload() {
+//   newImg = loadImage('assests/dolphinOne.jpg');
+// }
 
 function draw() {
   background("#03A9F4");
   
-  fill("blue");
-  rect(0,200,width)
+  
+
   calcWave();
   renderWave();
   
@@ -54,7 +59,8 @@ function draw() {
   
   arc(20,20,20,40,0,HALF_PI+QUARTER_PI)
   rect(-dim / 2, -dim / 2, 80, 30);
-  
+
+  image(img, -dim / 2, -dim / 2, 50,50);
  
 }
 
@@ -74,8 +80,11 @@ function calcWave() {
 function renderWave() {
   noStroke();
   fill(255);
+   fill("blue");
   // A simple way to draw the wave with an ellipse at each location
   for (let x = 0; x < yvalues.length; x++) {
-    ellipse(x * xspacing, height / 2 + yvalues[x], 16, 16);
+    
+    rect(x * xspacing, height / 2 + yvalues[x], 16,height)
+
   }
 }

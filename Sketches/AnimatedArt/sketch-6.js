@@ -150,8 +150,4 @@ function mousePressed() {
     fill(skintones[i]);
     noStroke();
     ellipse(200,200,140,190);
-  
-
-
-
 }
