@@ -97,7 +97,7 @@ function drawAfro() {
   ellipse(64,245,curls,curls);
   ellipse(65,223,curls,curls);
   ellipse(193,433,curls,curls); 
-  // ellipse(254,438,curls,curls);
+  ellipse(254,438,curls,curls);
   
 // //   right
  
@@ -136,7 +136,7 @@ function drawAfro() {
      //   straight hair
   fill("black");
   noStroke();
-  rect(172,195,155,hairHeight,5)
+  rect(140,250,220,hairHeight,5)
 
   // hairHeight  = hairHeight  + .5
   
@@ -165,13 +165,15 @@ function drawAfro() {
   // ellipse(250,340,170,250);
   arc(250,280,200,340,345,195,OPEN )
   
-  
+  //   hairline
+ fill("black");
+  arc(250,255,220,150,180,0)
   
   // eyebrow
   noFill()
   stroke("#4F2A0A")
   strokeWeight(3)
-  arc(210,320,50,40,190,345)
+  arc(205,320,50,40,190,345)
   
   noFill()
   stroke("#4F2A0A")
