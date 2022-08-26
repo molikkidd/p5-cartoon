@@ -181,16 +181,21 @@ function drawAfro() {
   arc(300,320,50,40,190,345)
   
   // eyes
-//   fill("#DBE9EF");
-//   noStroke();
-//   // arc(220,260,30,20,180,0)
-//   ellipse(220,260,30,10)
+  fill(skintones[counter]);
+  noStroke();
+  arc(350,320,30,40,260,110,OPEN)
+  // ellipse(220,260,30,10)
   
-//   fill("#DBE9EF");
-//   noStroke();
-//   // arc(280,260,30,20,180,0)
-//     ellipse(280,260,30,10)
+  // fill("#DBE9EF");
+  // noStroke();
+  arc(150,315,30,40,70,270,OPEN)
+    // ellipse(280,260,30,10)
 
+  
+//   EARRINGS
+  fill(bgColors[counter]);
+  circle(155,337,20)
+  circle(347,337,20)
 //   nose
   fill("#4F2A0A");
   noStroke();
