@@ -69,68 +69,68 @@ function drawAfro() {
    fill("black");
 //   // // noStroke()
 // //   left
-    ellipse(263,65,curls,curls);
-    ellipse(244,70,curls,curls);
-    ellipse(225,65,curls,curls);
-    ellipse(203,74,curls,curls);
-    ellipse(177,77,curls,curls);
-    ellipse(148,91,curls,curls);
-    ellipse(130,107,curls,curls);
-    ellipse(111,123,curls, curls);
-    ellipse(71,198,curls,curls);
-  ellipse(95,142,curls,curls);
-  ellipse(77,175,curls, curls); 
-  ellipse(64,275,curls, curls);
-  ellipse(67,302,curls, curls);
-  ellipse(78,332,curls, curls);
-  ellipse(91,345,curls, curls);
-  ellipse(100,370,curls, curls);
-  ellipse(133,401,curls,curls);
-  ellipse(153,416,curls,curls);
-  ellipse(172,424,curls, curls);
-   ellipse(207,433,curls,curls);
-  ellipse(122,383,curls,curls);
-  ellipse(149,392,curls,curls);
+    circle(263,65,curls);
+    circle(244,70,curls);
+    circle(225,65,curls);
+    circle(203,74,curls);
+    circle(177,77,curls);
+    circle(148,91,curls);
+    circle(130,107,curls);
+    circle(111,123,curls);
+    circle(71,198,curls);
+  circle(95,142,curls);
+  circle(77,175,curls); 
+  circle(64,275,curls);
+  circle(67,302,curls);
+  circle(78,332,curls);
+  circle(91,345,curls);
+  circle(100,370,curls);
+  circle(133,401,curls);
+  circle(153,416,curls);
+  circle(172,424,curls);
+   circle(207,433,curls);
+  circle(122,383,curls);
+  circle(149,392,curls);
 
 
-  ellipse(64,288,curls,curls);
-  ellipse(64,245,curls,curls);
-  ellipse(65,223,curls,curls);
-  ellipse(193,433,curls,curls); 
-  ellipse(254,438,curls,curls);
+  circle(64,288,curls);
+  circle(64,245,curls);
+  circle(65,223,curls);
+  circle(193,433,curls); 
+  circle(254,438,curls);
   
 // //   right
  
  
-  ellipse(285,60,curls, curls); 
-  ellipse(309,74,curls, curls);
-  ellipse(332,81,curls, curls);
-  ellipse(353,99,curls, curls);
-  ellipse(378,113,curls, curls);
-  ellipse(398,134,curls, curls);
-  ellipse(415,167,curls, curls);
-  ellipse(429,193,curls, curls);
-  ellipse(426,212,curls,curls);
-  ellipse(435,242,curls,curls);
-  ellipse(438,271,curls,curls);
+  circle(285,60,curls); 
+  circle(309,74,curls);
+  circle(332,81,curls);
+  circle(353,99,curls);
+  circle(378,113,curls);
+  circle(398,134,curls);
+  circle(415,167,curls);
+  circle(429,193,curls);
+  circle(426,212,curls);
+  circle(435,242,curls);
+  circle(438,271,curls);
   
-  ellipse(429,298,curls,curls);
-  ellipse(418,325,curls,curls);
-  ellipse(406,341,curls,curls);
-  ellipse(398,365,curls,curls);
-  ellipse(378,382,curls,curls);
-  ellipse(365,397,curls,curls);
-  ellipse(343,413,curls,curls);
-  ellipse(319,420,curls,curls);
+  circle(429,298,curls);
+  circle(418,325,curls);
+  circle(406,341,curls);
+  circle(398,365,curls);
+  circle(378,382,curls);
+  circle(365,397,curls);
+  circle(343,413,curls);
+  circle(319,420,curls);
   
-  ellipse(297,438,curls,curls);
-  ellipse(207,382,curls,curls);
-  ellipse(112,333,curls,curls);
-  ellipse(119,342,curls,curls);
-  ellipse(137,354,curls,curls);
-  ellipse(153,367,curls,curls);
-  ellipse(178,376,curls,curls); 
-  ellipse(254,388,curls,curls);
+  circle(297,438,curls);
+  circle(207,382,curls);
+  circle(112,333,curls);
+  circle(119,342,curls);
+  circle(137,354,curls);
+  circle(153,367,curls);
+  circle(178,376,curls); 
+  circle(254,388,curls);
   
 
      //   straight hair
