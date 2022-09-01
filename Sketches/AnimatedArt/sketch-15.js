@@ -43,7 +43,7 @@ function draw() {
   drawAfro()
   drawHearts()
   drawFace()
-  drawCircles() 
+  // drawCircles() 
 }
 
 function drawCircles() {
@@ -68,9 +68,9 @@ function drawCircles() {
 //   }
 
 
-  push();
+  // push();
   fill(230, 190, 230, 240);
-  translate(400, 400);
+  translate(200, 200);
   noStroke();
   //rotate(radians(frameCount / 2));
   for (var r1 = 0; r1 < 10; r1++) {
@@ -80,10 +80,11 @@ function drawCircles() {
     }
     if (frameCount > 600) {
       ellipse(0, 40, 25, 50);
+      
     }
     rotate(180 / 5);
   }
-  pop();
+  // pop();
 
 }
 
@@ -255,19 +256,31 @@ function mousePressed() {
     curls = 30
   }
 }
+let theta = 0;
+let maxDiameter = 40;
+
  function drawHearts() {
    
+   var diam = 20 + sin(theta) * maxDiameter ;
+
+  // draw the circle 
+  // ellipse(width/2,height/2, diam, diam); 
+
+  // make theta keep getting bigger
+  // you can play with this number to change the speed
+  theta += 2; 
+   
   // for (var i=0; i<=200; i+=20){
-    let xr=random(1,2);     
-    let yr=random(1,1.5);
+    // let xr=random(1,2);     
+    // let yr=random(1,1.5);
    for (var x=100; x<=450; x +=160 ){
     for(var y=120; y<=450; y +=130){
   fill('#9C27B0');
-  ellipse(x+xr,y+yr,20,20)
-  ellipse(x-15+xr,y+5,20,20)
-  ellipse(x-25+xr,y-5,20,20)
-  ellipse(x-17+xr,y-20,20,20)
-  ellipse(x+xr,y-15,20,20)
+  ellipse(x,y,diam,diam)
+  ellipse(x-15,y+5,diam,diam)
+  ellipse(x-25,y-5,diam,diam)
+  ellipse(x-17,y-20,diam,diam)
+  ellipse(x,y-15,diam,diam)
   fill('yellow')
   ellipse(x-11,y-7,20,20)
   }
