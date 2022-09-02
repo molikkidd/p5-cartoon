@@ -15,6 +15,13 @@ var bgColors = [
   "#088F8F",
   "#50C878",
 ]
+var flowerColors = [
+  "#cb5382",
+  "#bc4f5e",
+  "#FFC4CB",
+  "#F5BFD9",
+  "#9C27B0"
+]
 var counter = 0;
 
 var curls = 30;
@@ -37,58 +44,37 @@ function setup() {
 
 function draw() {
   background(bgColors[counter]);
-   
-  
-
+  drawCircles() 
   drawAfro()
-  drawHearts()
+  drawFlowers()
   drawFace()
-  // drawCircles() 
+  singleFlower()
+ 
 }
 
 function drawCircles() {
   
-    // //   ball
-//   fill("#2196F3")
-//   circle(circleX,circleY,50);
+    // /
+  fill("#FFEB3B")
+  circle(circleX,circleY,100);
   
-
+  circleY = circleY + ySpeed
+  // console.log('circleY',circleY,'ySpeed',ySpeed)
   
-//   circleY = circleY + ySpeed
-//   // console.log('circleY',circleY,'ySpeed',ySpeed)
-
-  
-//   if (circleY < 0 || circleY > height) {
-//     ySpeed = ySpeed * -1;
-//   }
-
-//   circleX += xSpeed;
-//   if (circleX < 0 || circleX > width) {
-//     xSpeed = xSpeed * -1;
-//   }
-
-
-  // push();
-  fill(230, 190, 230, 240);
-  translate(200, 200);
-  noStroke();
-  //rotate(radians(frameCount / 2));
-  for (var r1 = 0; r1 < 10; r1++) {
-    
-    if (frameCount <= 600) {
-      ellipse(0, 10 + frameCount / 20, 10 + frameCount / 40, 20 + frameCount / 20);
-    }
-    if (frameCount > 600) {
-      ellipse(0, 40, 25, 50);
-      
-    }
-    rotate(180 / 5);
+  if (circleY < 0 || circleY > height) {
+    ySpeed = ySpeed * -1;
   }
-  // pop();
 
+  circleX += xSpeed;
+  if (circleX < 0 || circleX > width) {
+    xSpeed = xSpeed * -1;
+  }
+
+ 
 }
 
 function drawFace() {
+  
   //   face
   fill(skintones[counter])
   noStroke();
@@ -204,6 +190,7 @@ function drawAfro() {
   circle(365,397,curls);
   circle(343,413,curls);
   circle(319,420,curls); 
+   circle(290,434,curls); 
   
   // curls = curls + random(-.1,.2);
 
@@ -259,8 +246,7 @@ function mousePressed() {
 let theta = 0;
 let maxDiameter = 40;
 
- function drawHearts() {
-   
+function drawFlowers() {
    var diam = 20 + sin(theta) * maxDiameter ;
 
   // draw the circle 
@@ -270,24 +256,43 @@ let maxDiameter = 40;
   // you can play with this number to change the speed
   theta += 2; 
    
-  // for (var i=0; i<=200; i+=20){
-    // let xr=random(1,2);     
-    // let yr=random(1,1.5);
    for (var x=100; x<=450; x +=160 ){
     for(var y=120; y<=450; y +=130){
-  fill('#9C27B0');
-  ellipse(x,y,diam,diam)
-  ellipse(x-15,y+5,diam,diam)
-  ellipse(x-25,y-5,diam,diam)
-  ellipse(x-17,y-20,diam,diam)
-  ellipse(x,y-15,diam,diam)
-  fill('yellow')
-  ellipse(x-11,y-7,20,20)
-  }
+      fill(flowerColors[counter]);
+      // ellipse(x,y,diam,diam)
+      circle(x,y,diam)
+      ellipse(x-15,y+5,diam,diam)
+      ellipse(x-25,y-5,diam,diam)
+      ellipse(x-17,y-20,diam,diam)
+      ellipse(x,y-15,diam,diam)
+      fill('yellow')
+      ellipse(x-11,y-7,20,20)
+    }
+   }
  }
-  
- 
 
-  
-   
- }
+function singleFlower() {
+  //    second flower
+    // push();
+  fill(230, 190, 230, 240);
+  translate(200, 200);
+  noStroke();
+  //rotate(radians(frameCount / 2));
+  for (var r1 = 0; r1 < 10; r1++) {
+    
+    if (frameCount <= 600) {
+      ellipse(0, 10 + frameCount / 20, 10 + frameCount / 40, 20 + frameCount / 20);
+    }
+    if (frameCount > 600) {
+      ellipse(0, 40, 25, 50);
+      
+    }
+    rotate(180 / 5);
+  }
+}
+// function mouseMoved() {
+//   counter = counter + 1;
+//   if (counter >= 5) {
+//     counter = 0;
+//   }
+// }
