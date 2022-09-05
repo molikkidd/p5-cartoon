@@ -269,7 +269,64 @@ function drawFlowers() {
       circle(x-11,y-7,20)
     }
    }
+
+   for (var x=120; x<=420; x +=142 ){
+ 
+      fill(flowerColors[counter]);
+      circle(x,137,20)
+      circle(x-15,142,20)
+      circle(x-25,132,20)
+      circle(x-17,117,20)
+      circle(x,122,20)
+      fill('yellow')
+      circle(x-11,130,20)
+    
+   }
+
+   for (var x=120; x<=420; x +=142 ){
+    for(var y=130; y<=450; y +=130){
+      fill(flowerColors[counter]);
+      circle(x,y,diam)
+      circle(x-15,y+5,diam)
+      circle(x-25,y-5,diam)
+      circle(x-17,y-20,diam)
+      circle(x,y-15,diam)
+      fill('yellow')
+      circle(x-11,y-7,20)
+    }
+   }
   
+//    for (var x=120; x<=420; x +=142 ){
+ 
+//       fill(flowerColors[counter]);
+//       circle(x,137,20)
+//       circle(x-15,142,20)
+//       circle(x-25,132,20)
+//       circle(x-17,117,20)
+//       circle(x,122,20)
+//       fill('yellow')
+//       circle(x-11,130,20)
+    
+//    } 
+  
+   // fill('#cb5382');
+   //    circle(131,137,20)
+   //    circle(115,142,20)
+   //    circle(105,132,20)
+   //    circle(113,117,20)
+   //    circle(130,122,20)
+   //    fill('yellow')
+   //    circle(120,130,20)
+  
+  // fill('#cb5382');
+   //    circle(131,137,20)
+   //    circle(115,142,20)
+   //    circle(105,132,20)
+   //    circle(113,117,20)
+   //    circle(130,122,20)
+   //    fill('yellow')
+   //    circle(120,130,20)
+
 //      for (var x=100; x<=450; x +=160 ){
 //         for(var y=155; y<=400; y +=110){
 // //           petals
